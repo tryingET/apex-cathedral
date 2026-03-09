@@ -1,0 +1,27 @@
+{
+  "name": "apex-cathedral",
+  "runtime": "elixir",
+  "platform": "beam",
+  "gateway": "plug",
+  "typescript_layer": ["ui", "sdk", "provider-adapters"],
+  "domain_models": [
+    "Capability",
+    "Resource",
+    "Provider",
+    "ExecutionRequest",
+    "ExecutionRun",
+    "ApprovalRequest",
+    "PolicyDecision",
+    "ExecutionResult",
+    "AuditEvent",
+    "Workspace"
+  ],
+  "capabilities": [
+    "workspace.fs.read_file",
+    "workspace.fs.write_file",
+    "workspace.sqlite.query",
+    "workspace.sqlite.execute",
+    "mock.account.get_profile",
+    "mock.account.update_profile"
+  ]
+}

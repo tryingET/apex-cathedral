@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "updated_at": "",
+  "owner": "@tryinget",
+  "project_name": "apex-cathedral",
+  "milestones": [
+    {
+      "id": "M1",
+      "title": "Initial Setup",
+      "issues": []
+    }
+  ]
+}

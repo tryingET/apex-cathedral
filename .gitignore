@@ -1,0 +1,11 @@
+_build/
+deps/
+node_modules/
+apps/ui/node_modules/
+apps/ts-sdk/node_modules/
+coverage/
+generated/
+var/
+tmp/
+.DS_Store
+erl_crash.dump

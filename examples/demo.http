@@ -1,0 +1,46 @@
+### Capabilities
+GET http://localhost:4100/capabilities
+
+### SQLite query allowed automatically
+POST http://localhost:4100/executions
+content-type: application/json
+
+{
+  "workspace_id": "demo",
+  "requested_by": "agent:analyst",
+  "capability": "workspace.sqlite.query",
+  "arguments": {
+    "sql": "SELECT 1 AS ok",
+    "params": []
+  }
+}
+
+### File write requiring approval
+POST http://localhost:4100/executions
+content-type: application/json
+
+{
+  "workspace_id": "demo",
+  "requested_by": "agent:writer",
+  "capability": "workspace.fs.write_file",
+  "arguments": {
+    "path": "notes/hello.txt",
+    "content": "hello from apex"
+  }
+}
+
+### Policy denial example
+POST http://localhost:4100/executions
+content-type: application/json
+
+{
+  "workspace_id": "demo",
+  "requested_by": "agent:profile",
+  "capability": "mock.account.update_profile",
+  "mode": "EXECUTE",
+  "arguments": {
+    "patch": {
+      "plan": "enterprise"
+    }
+  }
+}

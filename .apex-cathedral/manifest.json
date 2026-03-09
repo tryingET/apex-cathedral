@@ -1,0 +1,18 @@
+{
+  "generator": "apex-cathedral",
+  "source_repo": "/mnt/data/apex-cathedral",
+  "generated_paths": [
+    "README.md",
+    "LICENSE",
+    "Makefile",
+    "docker-compose.yml",
+    "mix.exs",
+    "mix.lock",
+    ".gitignore",
+    "config",
+    "apps",
+    "docs",
+    "examples",
+    "scripts"
+  ]
+}
