@@ -3,6 +3,8 @@ deps/
 node_modules/
 apps/ui/node_modules/
 apps/ts-sdk/node_modules/
+apps/ui/dist/
+apps/ts-sdk/dist/
 coverage/
 generated/
 var/
