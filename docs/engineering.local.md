@@ -14,7 +14,7 @@ Shared engineering lane and discipline guidance comes from `/home/tryinget/ai-so
 This file records the repo-local selected subset for apex-cathedral, a Elixir/Phoenix-style umbrella with TypeScript SDK/UI surfaces. The repo `AGENTS.md` remains the operating authority for repo-specific workflow, source-owner boundaries, and read order.
 
 Machine-readable selection lives in `policy/engineering-lane.json`.
-Release pin: `v0.12.1` (`5be0f0a294014f2f7aee1ca5adcb6f3c76553e11`).
+Release pin: `v0.12.2` (`27ff32a529b6da6b27051e97fdb1d95a0a9be4ae`).
 
 ## Selected lanes
 
@@ -23,9 +23,9 @@ Release pin: `v0.12.1` (`5be0f0a294014f2f7aee1ca5adcb6f3c76553e11`).
 - `ts-frontend`
 
 ```bash
-uv tool -n run --from 'git+https://github.com/tryingET/core_engineering-core.git@5be0f0a294014f2f7aee1ca5adcb6f3c76553e11' engineering-core show elixir
-uv tool -n run --from 'git+https://github.com/tryingET/core_engineering-core.git@5be0f0a294014f2f7aee1ca5adcb6f3c76553e11' engineering-core show ts
-uv tool -n run --from 'git+https://github.com/tryingET/core_engineering-core.git@5be0f0a294014f2f7aee1ca5adcb6f3c76553e11' engineering-core show ts-frontend
+uv tool -n run --from 'git+https://github.com/tryingET/core_engineering-core.git@27ff32a529b6da6b27051e97fdb1d95a0a9be4ae' engineering-core show elixir
+uv tool -n run --from 'git+https://github.com/tryingET/core_engineering-core.git@27ff32a529b6da6b27051e97fdb1d95a0a9be4ae' engineering-core show ts
+uv tool -n run --from 'git+https://github.com/tryingET/core_engineering-core.git@27ff32a529b6da6b27051e97fdb1d95a0a9be4ae' engineering-core show ts-frontend
 ```
 
 ## Selected disciplines
@@ -45,9 +45,9 @@ uv tool -n run --from 'git+https://github.com/tryingET/core_engineering-core.git
 Catalog/list commands:
 
 ```bash
-uv tool -n run --from 'git+https://github.com/tryingET/core_engineering-core.git@5be0f0a294014f2f7aee1ca5adcb6f3c76553e11' engineering-core catalog --pretty
-uv tool -n run --from 'git+https://github.com/tryingET/core_engineering-core.git@5be0f0a294014f2f7aee1ca5adcb6f3c76553e11' engineering-core list-disciplines
-uv tool -n run --from 'git+https://github.com/tryingET/core_engineering-core.git@5be0f0a294014f2f7aee1ca5adcb6f3c76553e11' engineering-core list-templates
+uv tool -n run --from 'git+https://github.com/tryingET/core_engineering-core.git@27ff32a529b6da6b27051e97fdb1d95a0a9be4ae' engineering-core catalog --pretty
+uv tool -n run --from 'git+https://github.com/tryingET/core_engineering-core.git@27ff32a529b6da6b27051e97fdb1d95a0a9be4ae' engineering-core list-disciplines
+uv tool -n run --from 'git+https://github.com/tryingET/core_engineering-core.git@27ff32a529b6da6b27051e97fdb1d95a0a9be4ae' engineering-core list-templates
 ```
 
 ## Repo-local deviations and emphasis
