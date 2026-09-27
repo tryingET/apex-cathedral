@@ -12,7 +12,6 @@ Template for a delivery project repo (project context + code + tests).
 
 ## Guardrails
 - No secrets in git.
-- Never push to `main`; MRs only.
 - Treat `docs/_core/**` as immutable.
 - Track deferred work in `governance/work-items.json` (avoid ad-hoc TODO comments).
 

@@ -14,6 +14,7 @@ Shared engineering lane and discipline guidance comes from `/home/tryinget/ai-so
 This file records the repo-local selected subset for apex-cathedral, a Elixir/Phoenix-style umbrella with TypeScript SDK/UI surfaces. The repo `AGENTS.md` remains the operating authority for repo-specific workflow, source-owner boundaries, and read order.
 
 Machine-readable selection lives in `policy/engineering-lane.json`.
+Release pin: `v0.12.1` (`5be0f0a294014f2f7aee1ca5adcb6f3c76553e11`).
 
 ## Selected lanes
 
@@ -22,9 +23,9 @@ Machine-readable selection lives in `policy/engineering-lane.json`.
 - `ts-frontend`
 
 ```bash
-uv tool -n run --from ~/ai-society/core/engineering-core engineering-core show elixir
-uv tool -n run --from ~/ai-society/core/engineering-core engineering-core show ts
-uv tool -n run --from ~/ai-society/core/engineering-core engineering-core show ts-frontend
+uv tool -n run --from 'git+https://github.com/tryingET/core_engineering-core.git@5be0f0a294014f2f7aee1ca5adcb6f3c76553e11' engineering-core show elixir
+uv tool -n run --from 'git+https://github.com/tryingET/core_engineering-core.git@5be0f0a294014f2f7aee1ca5adcb6f3c76553e11' engineering-core show ts
+uv tool -n run --from 'git+https://github.com/tryingET/core_engineering-core.git@5be0f0a294014f2f7aee1ca5adcb6f3c76553e11' engineering-core show ts-frontend
 ```
 
 ## Selected disciplines
@@ -44,9 +45,9 @@ uv tool -n run --from ~/ai-society/core/engineering-core engineering-core show t
 Catalog/list commands:
 
 ```bash
-uv tool -n run --from ~/ai-society/core/engineering-core engineering-core catalog --pretty
-uv tool -n run --from ~/ai-society/core/engineering-core engineering-core list-disciplines
-uv tool -n run --from ~/ai-society/core/engineering-core engineering-core list-templates
+uv tool -n run --from 'git+https://github.com/tryingET/core_engineering-core.git@5be0f0a294014f2f7aee1ca5adcb6f3c76553e11' engineering-core catalog --pretty
+uv tool -n run --from 'git+https://github.com/tryingET/core_engineering-core.git@5be0f0a294014f2f7aee1ca5adcb6f3c76553e11' engineering-core list-disciplines
+uv tool -n run --from 'git+https://github.com/tryingET/core_engineering-core.git@5be0f0a294014f2f7aee1ca5adcb6f3c76553e11' engineering-core list-templates
 ```
 
 ## Repo-local deviations and emphasis
@@ -55,6 +56,10 @@ uv tool -n run --from ~/ai-society/core/engineering-core engineering-core list-t
 - Keep package/app-local validation and release behavior in the owning package or app surface.
 - Treat this file as a selector and override note, not a replacement for `AGENTS.md` or runtime task/evidence authority.
 - When local practice intentionally diverges from engineering-core guidance, record the reason here or in the owning project/decision document.
+- The UI and SDK retain npm/package-local scripts instead of migrating to Bun: the existing npm lockfiles and CI workflow are the repo's local package-management contract; switching managers is outside this pin update.
+- The UI typechecks with exactly pinned TypeScript 7.0.2 (`tsc --noEmit`). The SDK remains on its pre-existing TypeScript 5 pin in uncommitted package/publish work: that work renames a public package and needs a separate owner decision before its manifest can be committed or migrated to TypeScript 7.
+- Elixir validation remains the repo's existing `just ci`/`scripts/ci/full.sh` smoke, ROCS build/validate, and structural checks rather than introducing Credo, Dialyzer, or `mix ci` in this metadata upgrade; full runtime tests are available separately via `just test`.
+- No Biome, tsgo/native-preview, or Bun config is currently present to migrate; adopting an additional formatter/linter is a separate tooling decision.
 
 ## Canonical local commands
 
