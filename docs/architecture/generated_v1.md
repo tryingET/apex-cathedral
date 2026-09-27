@@ -1,3 +1,10 @@
+---
+summary: "Generated v1 architecture snapshot emitted by the repository generator."
+read_when:
+  - "When comparing generator output to the authored architecture docs"
+  - "When debugging architecture iteration artifacts"
+---
+
 # Generated architecture v1
 
 A full control plane with event sourcing, command routing, provider indirection, and resource leases.

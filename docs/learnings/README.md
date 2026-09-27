@@ -1,3 +1,10 @@
+---
+summary: "How to capture repo learnings and promote them to reusable patterns."
+read_when:
+  - "When writing a new learning entry"
+  - "When deciding whether a discovery should become a TIP"
+---
+
 # Learnings
 
 Capture what works, what doesn't, and what to try next.

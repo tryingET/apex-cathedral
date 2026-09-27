@@ -1,3 +1,10 @@
+---
+summary: "Project overview, architecture, and local development commands for Apex Cathedral."
+read_when:
+  - "When onboarding to the repo"
+  - "When you need architecture context or local run/test commands"
+---
+
 # Apex Cathedral
 
 Apex Cathedral is a **local-first execution runtime for AI agents on the BEAM**. It is built as an Elixir umbrella application with a small Plug gateway, a TypeScript SDK, a local UI, and a repository generator that can critique and re-emit the repository through iterative architecture passes.

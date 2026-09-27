@@ -1,3 +1,10 @@
+---
+summary: "Operational storage model, environment variables, and runtime stance."
+read_when:
+  - "When running Apex Cathedral locally"
+  - "When checking storage locations or operational assumptions"
+---
+
 # Operations
 
 ## Storage

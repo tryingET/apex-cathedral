@@ -1,3 +1,10 @@
+---
+summary: "Repo-local session diary format and crystallization flow."
+read_when:
+  - "When capturing a work session in this repo"
+  - "When promoting raw notes into learnings or decisions"
+---
+
 # Diary
 
 Repo-local session capture for KES (Knowledge Evolution System).

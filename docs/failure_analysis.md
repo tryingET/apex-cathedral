@@ -1,3 +1,10 @@
+---
+summary: "Failure scenarios and mitigation choices for Apex Cathedral."
+read_when:
+  - "When reviewing runtime failure handling"
+  - "When deciding whether a failure mode is intentional"
+---
+
 # Failure analysis
 
 Apex Cathedral treats failure handling as part of the architecture, not as an afterthought.

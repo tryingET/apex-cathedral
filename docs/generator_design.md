@@ -1,3 +1,10 @@
+---
+summary: "Design of the self-improving repository generator and its invariants."
+read_when:
+  - "When changing the repository generator"
+  - "When checking which invariants generated output must preserve"
+---
+
 # Generator design
 
 The repository includes a **self-improving repository generator** in `scripts/cathedral_generator.py`.

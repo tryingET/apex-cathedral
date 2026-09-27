@@ -1,3 +1,10 @@
+---
+summary: "How repo-local work items are modeled and validated."
+read_when:
+  - "When updating governance/work-items.json"
+  - "When checking the planning schema for this repo"
+---
+
 # Project Work Items
 
 `governance/work-items.json` is the project-local planning model for this repository.

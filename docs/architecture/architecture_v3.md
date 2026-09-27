@@ -1,3 +1,10 @@
+---
+summary: "Final v3 architecture and core module budget for Apex Cathedral."
+read_when:
+  - "When implementing or reviewing the runtime design"
+  - "When checking the intended core module surface"
+---
+
 # Architecture v3
 
 ## Final design

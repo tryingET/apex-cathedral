@@ -1,3 +1,10 @@
+---
+summary: "Architecture v1 baseline and why it was too complex."
+read_when:
+  - "When tracing the architecture evolution"
+  - "When evaluating why forwarding layers were removed"
+---
+
 # Architecture v1
 
 ## Intent

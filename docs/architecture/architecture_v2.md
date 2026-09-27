@@ -1,3 +1,10 @@
+---
+summary: "Architecture v2 refinement after skeptical review."
+read_when:
+  - "When tracing the architecture evolution"
+  - "When comparing the intermediate design to v1 and v3"
+---
+
 # Architecture v2
 
 ## What changed

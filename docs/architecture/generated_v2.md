@@ -1,3 +1,10 @@
+---
+summary: "Generated v2 architecture snapshot emitted by the repository generator."
+read_when:
+  - "When comparing generator output to the authored architecture docs"
+  - "When debugging architecture iteration artifacts"
+---
+
 # Generated architecture v2
 
 The control plane is collapsed into a registry, a policy engine, an approval manager, an execution manager, and supervised resources.

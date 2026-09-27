@@ -1,7 +1,7 @@
 MIX ?= mix
 NPM ?= npm
 
-.PHONY: setup dev test ui sdk-build generator validate docker-up docker-down
+.PHONY: setup dev test ui sdk-build generator docs-strict validate docker-up docker-down
 
 setup:
 	$(MIX) deps.get
@@ -22,6 +22,9 @@ sdk-build:
 
 generator:
 	python3 scripts/cathedral_generator.py --out generated
+
+docs-strict:
+	python3 scripts/check_docs_strict.py
 
 validate:
 	python3 scripts/validate_repo.py
