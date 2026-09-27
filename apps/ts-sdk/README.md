@@ -1,7 +1,20 @@
+---
+summary: "TypeScript SDK usage for the Apex Cathedral gateway."
+read_when:
+  - "When integrating with Apex Cathedral from TypeScript"
+  - "When checking the SDK surface against the HTTP API"
+---
+
 # Apex Cathedral TypeScript SDK
 
+Install the published package:
+
+```bash
+npm install @tryinget/apex-cathedral-sdk
+```
+
 ```ts
-import { ApexClient } from "@apex-cathedral/ts-sdk";
+import { ApexClient } from "@tryinget/apex-cathedral-sdk";
 
 const client = new ApexClient({ baseUrl: "http://localhost:4100" });
 
@@ -21,4 +34,8 @@ const unsubscribe = client.events.subscribe((event) => {
 });
 ```
 
-The SDK intentionally mirrors the thin gateway surface. Runtime logic remains in Elixir.
+## Notes
+
+- The default gateway base URL is `http://localhost:4100`.
+- `events.subscribe(...)` uses `EventSource`; in Node.js you may need an EventSource-compatible runtime or polyfill.
+- Runtime authority remains in Elixir; the SDK is a thin typed client over the HTTP API.
